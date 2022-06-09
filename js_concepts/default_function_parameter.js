@@ -2,7 +2,7 @@
 
 // 구 버전의 파라미터를 받는 메서드 정의 방법
 // 이런식으로 undefined를 지정 해줘야 하는 불편함이 있었다.
-// 특히 파라미터를 2개이상 받게 되면 각각 지정해줘야 했기때문에 더 불편했다고 함
+// 특히 파라미터를 2개이상 받게 되면 각각 지정해줘야 했기때문에 더 불편했다
 function say(message) {
     if(message != undefined) {
         console.log(message);
