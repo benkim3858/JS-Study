@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>출력결과</title>
+</head>
+<body>
+<script>
+    // 세 막대의 길이중 가장 긴 막대 보다 나머지 두 막대의 길이를 합한 값이 더 길어야 가능
+    // My solving
+    function solution(a, b, c) {
+        let answer = "YES"
+        let answer2 = "NO"
+        console.log((a+b+c)/3);
+        console.log((a+b+c)/3 < a);
+        console.log((a+b+c)/3 < b);
+        console.log((a+b+c)/3 < c);
+
+        if((a+b+c)/3 < a) {
+            if(a < b+c) {
+                return answer;
+            } else {
+                return answer2
+            }
+        } else if ((a+b+c)/3 < b) {
+            if (b < a+c) {
+                return answer
+            } else {
+                return answer2
+            }
+        } else if ((a+b+c)/3 < c) {
+            if (c < a+b) {
+                return answer
+            } else {
+                return answer2
+            }
+        }
+        
+    }
+    console.log(solution(13, 29, 17));
+
+    // Teacher solving
+    function teacher_solution(a, b, c) {
+        let answer = "YES", max;
+        let sum = a+b+c;
+        if(a>b) max = a;
+        else max = b;
+        if(c>max) max = c;
+        if((sum-max) <= max) answer ="NO";
+        return answer;
+    }
+    console.log(teacher_solution(13, 33, 17));
+</script>
+</body>
+</html>
