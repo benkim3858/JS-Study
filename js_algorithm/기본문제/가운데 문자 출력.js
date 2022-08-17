@@ -15,4 +15,4 @@ function solution(str) {
     return answer;
 }
 
-console.log(solution('study'));
+console.log(solution('length'));
