@@ -24,6 +24,11 @@ function solution(arr) {
     return answer;
 }
 
+// 화살표 함수 
+// const solution = (arr) => {
+//     console.log(arr);
+// }
+
 let arr = [1, 0, 1, 1, 1, 0, 0, 1, 1, 0];
 // score = 1 + 1 + 2 + 3 + 1 + 2 (10)
 console.log(solution(arr));
